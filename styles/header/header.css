@@ -1,0 +1,46 @@
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Banner Promocional */
+.banner-header-text {
+    text-align: center;
+    background-color: var(--primary-blue);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 22px;
+
+    padding: 4px 16px;
+}
+
+.banner-header-text mark {
+    background-color: var(--strong-purple);
+    color: var(--white);
+    margin: 0 4px;
+    padding: 0 4px;
+}
+
+.banner-header-text em {
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+
+/* Layout desktop */
+@media screen and (min-width: 1200px) {
+    .banner-header-text mark {
+        border-radius: 4px;
+    }
+}
+
+/* Centralizando conteúdo em telas muito grandes */
+@media screen and (min-width: 1320px) {
+    .header-icons-container {
+        min-width: 1320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

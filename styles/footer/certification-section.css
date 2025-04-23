@@ -1,0 +1,40 @@
+/* Paragrafo final */
+.certification-section {
+    background-color: var(--white);
+    padding: 40px 16px 16px 16px;
+}
+
+.certification-section p {
+    font-weight: 400;
+    font-size: 0.75rem;
+    text-align: center;
+    line-height: 20px;
+    color: var(--intense-gray);
+}
+
+/* Certificados */
+.certifications-imgs-container {
+    margin-top: 40px;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around;
+}
+
+.certifications-imgs-container div {
+    display: flex;
+    gap: 24px;
+}
+
+/* Layout desktop */
+@media screen and (min-width: 1200px) {
+    .certification-section {
+        width: 1074px;
+        margin: 0 auto;
+    }
+
+    .certifications-imgs-container {
+        gap: 48px;
+        justify-content: center;
+    }
+}

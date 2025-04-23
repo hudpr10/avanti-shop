@@ -1,0 +1,62 @@
+/* Nav */
+.nav-links {
+    position: relative;
+
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 16px;
+}
+
+.hamburguer-menu {
+    background-image: url("/assets/icons/mini-menu-icon.svg");
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+}
+
+#openSubmenu {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    width: 177px;
+    cursor: pointer;
+
+    transition: 100ms;
+}
+
+/* Departametos */
+.nav-links a {
+    font-size: 0.875rem;
+    text-decoration: none;
+    color: var(--black);
+    cursor: pointer;
+    width: 107px;
+
+    transition: 100ms;
+}
+
+#openSubmenu:hover,
+#openSubmenu:hover svg line,
+.nav-links a:hover {
+    stroke: var(--primary-blue);
+    color: var(--primary-blue);
+    font-weight: 700;
+}
+
+
+/* Layout desktop */
+@media screen and (min-width: 1200px) {
+    .nav-links {
+        display: flex;
+    }
+}
+
+/* Centralizando conteúdo em telas muito grandes */
+@media screen and (min-width: 1320px) {
+    .nav-links {
+        min-width: 1320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

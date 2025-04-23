@@ -1,0 +1,62 @@
+.cup-section img {
+    height: 390px;
+}
+
+.cup-section div {
+    display: flex;
+    flex-direction: column;
+
+    margin: 38px 24px 0 24px;
+}
+
+.cup-section h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+.cup-section p {
+    margin-top: 18px;
+    font-size: 0.875rem;
+    letter-spacing: 0.6px;
+    line-height: 140%;
+    font-weight: 400;
+}
+
+/* Layout desktop */
+@media screen and (min-width: 1200px) {
+    .cup-section {
+        display: flex;
+        align-items: center;
+        gap: 37px;
+
+        padding: 0 53px 0 53px;
+    }
+
+    .cup-section img {
+        width: 652px;
+        height: 747px;
+        object-fit: contain;
+    }
+
+    .cup-section div {
+        margin: 0;
+    }
+
+    .cup-section h2 {
+        font-size: 1.875rem;
+    }
+
+    .cup-section p {
+        font-size: 1.125rem;
+    }
+}
+
+/* Centralizando conteúdo em telas muito grandes */
+@media screen and (min-width: 1320px) {
+    .cup-section {
+        width: 1320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

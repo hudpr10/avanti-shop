@@ -1,0 +1,99 @@
+/* Produtos */
+.product-container {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+
+    padding: 12px 8px;
+    border-radius: 10px;
+    border: 1px solid var(--medium-gray);
+}
+
+/* Tags */
+.tag {
+    color: var(--white);
+    padding: 0 6px;
+    border-radius: 4px;
+
+    width: min-content;
+    height: min-content;
+
+    font-size: 0.625rem;
+    line-height: 22px;
+    text-wrap: nowrap;
+}
+
+/* Tag Novo */
+.new-tag {
+    position: absolute;
+    top: 12px;
+    left: 8px;
+
+    background-color: var(--dark-blue);
+}
+
+/* Tag Desconto */
+.discount-tag {
+    background-color: var(--cyan);
+    padding: 4px 8px;
+
+    line-height: normal;
+}
+
+/* Imagem */
+.product-container img {
+    object-fit: contain;
+    height: 158px;
+}
+
+/* Textos */
+.product-title {
+    font-size: 0.75rem;
+    font-weight: 400;
+
+    margin: 8px 0 12px 0;
+}
+
+.details-container {
+    display: flex;
+    margin-bottom: 4px;
+    gap: 8px;
+}
+
+.price-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.old-price {
+    font-size: 0.75rem;
+    color: var(--intense-gray);
+    font-weight: 400;
+    text-decoration: line-through;
+}
+
+.new-price {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.on-credit {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--intense-gray);
+
+    margin-bottom: 8px;
+}
+
+.on-credit strong {
+    font-weight: 700;
+}
+
+/* Layout desktop */
+@media screen and (min-width: 1200px) {
+    .product-container img  {
+        height: 222px;
+    }
+}

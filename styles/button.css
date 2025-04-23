@@ -1,0 +1,17 @@
+button {
+    color: var(--white);
+    font-size: 0.875rem;
+    font-weight: 700;
+
+    background-color: var(--primary-blue);
+    padding: 10px 0;
+    
+    border-radius: 8px;
+    border: none;
+
+}
+
+.button-form {
+    font-size: 1rem;
+    padding: 14px 0;
+}

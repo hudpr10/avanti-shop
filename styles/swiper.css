@@ -1,0 +1,65 @@
+/* Posição das bullets */
+.swiper-pagination {
+    position: relative;
+    margin-top: 16px;
+}
+
+/* Tamanho e cor padrão das bullets */
+.swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
+    background-color: var(--dark-gray);
+    opacity: 1;
+}
+  
+/* Bullet ativa */
+.swiper-pagination-bullet-active {
+    background-color: var(--intense-gray);
+}
+
+/* Setas */
+.swiper-button-next,
+.swiper-button-prev {
+    display: none;
+
+    padding: 9px;
+    
+    height: 30px;
+    width: 30px;
+
+    background-color: var(--white);
+    border-radius: 100%;
+    border: 1px solid var(--primary-blue);
+    box-shadow: 0 3px 4px #00000040;
+}
+
+.swiper-button-next img,
+.swiper-button-prev img {
+    position: absolute;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: "";
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-button-prev {
+    left: 0;
+    transform: rotateY(180deg);
+}
+
+@media screen and (min-width: 1200px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: flex;
+    }
+
+    .swiper {
+        padding: 0 16px;
+        overflow: hidden;
+    }
+}

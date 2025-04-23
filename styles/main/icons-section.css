@@ -1,0 +1,112 @@
+/* Seção com os Icones */
+.icons-section {
+    padding: 28px 20px;
+    background-color: var(--background);
+}
+
+/* Imagem */
+.icons-section-container img {
+    height: 349px;
+}
+
+/* Titulo da Seção */
+.icons-section-container h3 {
+    margin: 21px 0;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-size: 1.25rem;
+}
+
+/* Lista com os Icones */
+.icons-section-container ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.icons-section-container li {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+/* Icones */
+.icons-section-container li img {
+    padding: 15px;
+    width: 60px;
+    height: 60px;
+
+    background-color: var(--primary-blue);
+    border-radius: 100%;
+}
+
+/* Paragrafos */
+.icons-section-container li p {
+    font-size: 0.75rem;
+    letter-spacing: 0.6px;
+    line-height: 140%;
+}
+
+/* Layout desktop */
+@media screen and (min-width: 1200px) {
+    /* Container para arrumar o tamanho */
+    .icons-section {
+        padding: 40px 0;
+    }
+
+    .icons-section-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+
+        padding: 0 53px 0 53px;
+    }
+    
+    /* Imagem grande */
+    .icons-section-container img {
+        width: 500px;
+        height: 728px;
+    }
+
+    /* Titulo */
+    .icons-section-container h3 {
+        margin: 0 0 50px 0;
+        font-size: 1.875rem;
+        color: var(--strong-gray);
+    }
+
+    /* Lista */
+    .icons-section-container ul {
+        gap: 50px;
+        width: 476px;
+    }
+
+    /* Icones */
+    .icons-section-container li img {
+        padding: 23px;
+        width: 90px;
+        height: 90px;
+    }
+
+    /* Paragrafos */
+    .icons-section-container li p {
+        font-size: 1.125rem;
+        color: var(--strong-gray);
+    }
+}
+
+/* Centralizando conteúdo em telas muito grandes */
+@media screen and (min-width: 1320px) {
+    .icons-section-container {
+        width: 1320px;
+        margin-left: auto;
+        margin-right: auto;
+    }    
+    
+    .icons-section-container img {
+        width: 652px;
+        height: 728px;
+    }
+}

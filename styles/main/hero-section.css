@@ -1,0 +1,105 @@
+/* Banner de promoções */
+.hero-section {
+    background-color: #E7E7EA;
+}
+
+.banner-container {
+    position: relative;
+    display: flex;
+}
+
+/* Textos do banner */
+.banner-main-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    height: min-content;
+
+    position: absolute;
+    top: 50%;
+    right: 38px;
+    transform: translateY(-50%);
+
+    font-family: "Nunito", sans-serif;
+}
+
+.banner-main-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Texto grande central */
+.banner-main-title-container span {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.banner-main-title-container span:last-child {
+    font-weight: 300;
+}
+
+/* Itens selecionados e desconto */
+.banner-discount {
+    color: var(--primary-blue);
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.banner-discount:last-child {
+    font-size: 2rem;
+}
+
+.dot-container {
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot {
+    height: 7px;
+    width: 7px;
+    background-color: var(--dark-gray);
+    border-radius: 100%;
+}
+
+.marked-dot {
+    background-color: var(--intense-gray);
+}
+
+/* Layout desktop */
+@media screen and (min-width: 1200px) {
+    /* Texto grande central */
+    .banner-main-title-container {
+        flex-direction: row;
+        
+    }
+
+    .banner-main-title-container span {
+        font-size: 7rem;
+    }
+
+    .banner-discount {
+        font-size: 2rem;
+        letter-spacing: 12px;
+    }
+
+    .banner-discount:last-child {
+        letter-spacing: normal;
+        font-size: 3.75rem;
+    }
+}
+
+/* Centralizando conteúdo em telas muito grandes */
+@media screen and (min-width: 1320px) {
+    .banner-container {
+        width: 1320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

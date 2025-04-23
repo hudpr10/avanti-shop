@@ -1,0 +1,33 @@
+/* Bandeiras dos Cartões */
+.payment-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    background-color: var(--light-gray);
+    padding: 48px 0 40px 0;
+}
+
+.payment-section div {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+}
+
+.payment-section div img {
+    width: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+    .payment-section {
+        padding: 64px 0;
+        flex-direction: row;
+        gap: 34px;
+
+        justify-content: center;
+    }
+
+    .payment-section div {
+        gap: 34px;
+    }
+}

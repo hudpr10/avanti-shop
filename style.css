@@ -1,0 +1,74 @@
+/* Import da Fonte Nunito Sans */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wdth,wght,YTLC@0,6..12,75..125,200..1000,440..540;1,6..12,75..125,200..1000,440..540&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('styles/reset.css');
+
+@import url('styles/header/header-introduction-section.css');
+@import url('styles/header/header-nav.css');
+@import url('styles/header/header.css');
+
+@import url('styles/main/hero-section.css');
+@import url('styles/main/product-section.css');
+@import url('styles/main/cup-section.css');
+@import url('styles/main/icons-section.css');
+@import url('styles/main/contact-us-section.css');
+@import url('styles/main/newsletter-section.css');
+
+@import url('styles/footer/social-section.css');
+@import url('styles/footer/payment-section.css');
+@import url('styles/footer/certification-section.css');
+
+@import url('styles/search-input.css');
+@import url('styles/product.css');
+@import url('styles/button.css');
+@import url('styles/accordion.css');
+@import url('styles/swiper.css');
+@import url('styles/submenu.css');
+
+
+:root {
+    --primary-blue: #005CFF;
+    --dark-blue: #00264E;
+
+    --cyan: #5EC0BE;
+
+    --strong-purple: #6220C1;
+
+    --background: #DEDEDE;
+    
+    --white: #FFFFFF;
+    --black: #000000;
+    --light-gray: #F5F5F5;
+    --medium-gray: #dddddd;
+    --dark-gray: #838383;
+    --strong-gray: #4f4f4f;
+    --intense-gray: #303030;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--text-black);
+    font-family: "Nunito Sans", sans-serif;
+}
+
+main {
+    margin: 16px 0 40px 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.img-resize {
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        gap: 64px;
+        margin-bottom: 40px;
+    }
+}

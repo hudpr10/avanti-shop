@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avanti SHOP</title>
+    
+    <!-- Importação Bootstrap via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+
+    <!-- Importação Swiper via CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <!-- Banner Promocional -->
+        <div class="banner-header-text">
+            Ganhe <mark>R$10,00</mark> de desconto no seu primeiro pedido. Utilize o cupom <em>DESCONTO10</em>
+        </div>
+
+        <!-- Elementos do Header -->
+        <section class="header-icons-container">
+            <img class="header-menu" src="/assets/icons/menu-icon.svg" alt="Menu Hamburguer">
+            <div class="logo-and-input-container">
+                <img src="/assets/icons/avanti-logo.svg" alt="Logo Avanti">
+                <div class="input-container input-desktop">
+                    <div class="search-input">
+                        <input type="text" id="searchDesktop" placeholder="Digite aqui o que você procura">
+                        <img id="searchButtonDesktop" src="/assets/icons/search-icon.svg" alt="Ícone de Lupa">
+                    </div>
+                    <span class="searched-text">Você buscou por: <span id="insertSearchDesktop"></span></span>
+                </div>
+            </div>
+            <!-- Icone do Cliente e Carrinho -->
+            <div class="acount-container">
+                <div class="client-icon">
+                    <img src="assets/icons/client-icon.svg" alt="Foto de perfil do cliente">
+                    <span>Olá, <br>Nome cliente!</span>
+                </div>
+                <div class="cart-icon">
+                    <img src="/assets/icons/cart-icon.svg" alt="Carrinho de Produtos com 2 itens">
+                    <span>2</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Campo de Pesquisa versão mobile -->
+        <div class="input-mobile">
+            <div class="search-input">
+                <input type="text" id="searchMobile" placeholder="Digite aqui o que você procura">
+                <img id="searchButtonMobile" src="/assets/icons/search-icon.svg" alt="Ícone de Lupa">
+            </div>
+            <span class="searched-text">Você buscou por: <span id="insertSearchMobile"></span></span>
+        </div>
+
+        <!-- Barra de Navegação -->
+        <nav class="nav-links">
+            <span id="openSubmenu">
+                <svg class="hamburger-icon" width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="1" y1="6" x2="13" y2="6" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="1" y1="11" x2="13" y2="11" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="1" y1="1" x2="13" y2="1" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                Todas as Categorias
+            </span>
+            <a href="#" class="nav-department">Departamanto 1</a>
+            <a href="#" class="nav-department">Departamanto 2</a>
+            <a href="#" class="nav-department">Departamanto 3</a>
+            <a href="#" class="nav-department">Departamanto 4</a>
+            <a href="#" class="nav-department">Departamanto 5</a>
+            <a href="#" class="nav-department">Departamanto 6</a>
+            <a href="#" class="nav-department">Departamanto 7</a>
+            <a href="#" class="nav-department">Departamanto 8</a>
+
+            <!-- Submenu de todos Departamentos -->
+            <nav class="submenu-container" id="allDepartments">
+                <div class="submenu-orientation">
+                    <ul class="submenu-department-container">
+                        <!-- Adicionado via Javascript -->
+                    </ul>
+                    <ul class="submenu-categories-container">
+                        <!-- Adicionado via Javascript -->
+                    </ul>
+                </div>
+    
+                <div class="submenu-img-container">
+                    <img src="assets/imgs/submenu-img.png" alt="Imagem de uma caneca com a logo da Avanti em cima de uma tábua de corte">
+                    <div class="img-content">
+                        <p>Confira os Produtos <storng>Que acabaram De chegar</storng></p>
+                        <button>VER TODOS</button>
+                    </div>
+                    <div class="img-blur"></div>
+                </div>
+            </nav>
+
+            <!-- Submenu dos Departamentos -->
+            <nav class="submenu-container" id="eachDepartment">
+                <div class="submenu-orientation">
+                    <span class="submenu-title">Departamento</span>
+                    <ul class="submenu-categories-container">
+                        <!-- Adicionado via Javascript -->
+                    </ul>
+                </div>
+    
+                <div class="submenu-img-container">
+                    <img src="assets/imgs/submenu-img.png" alt="Imagem de uma caneca com a logo da Avanti em cima de uma tábua de corte">
+                    <div class="img-content">
+                        <p>Confira os Produtos <storng>Que acabaram De chegar</storng></p>
+                        <button>VER TODOS</button>
+                    </div>
+                    <div class="img-blur"></div>
+                </div>
+            </nav>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="banner-container">
+                <!-- Imagem adicionada via Javascript -->
+                <img id="mainBanner" src="" alt="Imagem promocional, uma cadeira com algumas roupas em cima">
+                <div class="banner-main-text-container">
+                    <div class="banner-main-title-container">
+                        <span>SUPER</span>
+                        <span>SALE</span>
+                    </div>
+                    <span class="banner-discount">SELECTED ITEMS UP TO</span>
+                    <span class="banner-discount">50%OFF</span>
+                    </div>
+                <div class="dot-container">
+                    <span class="dot marked-dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-section">
+            <div class="top-labels-container">
+                <span>Lançamentos</span>
+                <a href="#">Ver Mais</a>
+            </div>
+
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper" id="swiper01">
+                    <!-- Elementos adicionados via Javascript -->
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"><img src="assets/icons/arrow-icon.svg"></div>
+                <div class="swiper-button-prev"><img src="assets/icons/arrow-icon.svg"></div>
+            </div>
+        </section>
+
+        <section class="cup-section">
+            <img class="img-resize" src="assets/imgs/avanti-cup-01.png" alt="Imagem de uma caneca com a logo da Avanti">
+            <div>
+                <h2>Lorem Ipsum</h2>
+                <p>
+                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                    <br>
+                    <br>
+                    Cras dignissim est et pellentesque tincidunt. Praesent bibendum quis velit a aliquam. Ut vestibulum turpis eget mi iaculis ullamcorper. Curabitur nec metus sed tortor sollicitudin porta nec eu enim. Ut fermentum scelerisque tortor mollis volutpat. Mauris iaculis magna nisl, vel porttitor augue placerat et.
+                </p>
+            </div>
+        </section>
+
+        <section class="icons-section">
+            <div class="icons-section-container">
+                <img class="img-resize" src="assets/imgs/avanti-cup-02.png" alt="Imagem de uma caneca com a logo da Avanti em cima de uma tábua de corte">
+                <div>
+                    <h3>LOREM IPSUM</h3>
+                    <ul>
+                        <li>
+                            <img src="assets/icons/map-pin-icon.svg">
+                            <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+                        </li>
+                        <li>
+                            <img src="assets/icons/map-pin-icon.svg">
+                            <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+                        </li>
+                        <li>
+                            <img src="assets/icons/map-pin-icon.svg">
+                            <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="cup-section">
+            <img class="img-resize" src="assets/imgs/avanti-cup-01.png" alt="Imagem de uma caneca com a logo da Avanti">
+            <div>
+                <h2>Lorem Ipsum</h2>
+                <p>
+                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                    <br>
+                    <br>
+                    Cras dignissim est et pellentesque tincidunt. Praesent bibendum quis velit a aliquam. Ut vestibulum turpis eget mi iaculis ullamcorper. Curabitur nec metus sed tortor sollicitudin porta nec eu enim. Ut fermentum scelerisque tortor mollis volutpat. Mauris iaculis magna nisl, vel porttitor augue placerat et.
+                </p>
+            </div>
+        </section>
+
+        <section class="product-section product-section-desktop">
+            <div class="top-labels-container">
+                <span>Lançamentos</span>
+                <a href="#">Ver Mais</a>
+            </div>
+
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper" id="swiper02">
+                    <!-- Elementos adicionados via Javascript -->
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"><img src="assets/icons/arrow-icon.svg"></div>
+                <div class="swiper-button-prev"><img src="assets/icons/arrow-icon.svg"></div>
+            </div>
+        </section>
+
+        <section class="contact-us-section">
+            <!-- Imagem adicionada via Javascript -->
+            <img id="avantiWorkplace" class="img-resize" src="" alt="Imagem do escritório da Avanti">
+            <div>
+                <p>Entre em contato conosco e verifique a disponibilidade para sua região!</p>
+            </div>
+        </section>
+
+        <section class="newsletter-section">
+            <h3>Cadastre-se na nossa <strong>newsletter</strong></h3>
+            <form>
+                <input type="text" id="" placeholder="Digite seu nome">
+                <input type="email" id="" placeholder="Digite seu e-mail">
+                <!-- Importado do Bootstrap: https://getbootstrap.com/docs/5.0/forms/checks-radios/ -->
+                <div class="form-check">
+                    <input type="checkbox" id="check" class="form-check-input">
+                    <label for="check">Estou de acordo com a <a href="">Política de Privacidade</a></label>
+                </div>
+                <button class="button-form">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <section class="social-section">
+            <div class="logo-links-container">
+                <img class="footer-avanti-logo" src="/assets/icons/avanti-logo.svg" alt="Logo Avanti">
+                <div class="social-links-container">
+                    <a href="https://www.instagram.com/penseavanti/"><img src="assets/icons/instagram.svg" alt="Ícone Instagram"></a>
+                    <a href="https://www.facebook.com/penseavanti/?locale=pt_BR"><img src="assets/icons/facebook.svg" alt="Ícone Facebook"></a>
+                    <a href="https://www.youtube.com/@penseavanti"><img src="assets/icons/youtube.svg" alt="Ícone YouTube"></a>
+                    <img src="assets/icons/tiktok.svg" alt="Ícone TikTok">
+                </div>
+            </div>
+            <div class="important-links-container">
+                <h4>Institucional</h4>
+                <h5>Sobre Nós</h5>
+                <h5>Nossas Lojas</h5>
+                <h5>Privacidade e Segurança</h5>
+                <h5>Termos e Condições</h5>
+            </div>
+            <div class="important-links-container">
+                <h4>Central de ajuda</h4>
+                <h5>Fale Conosco</h5>
+                <h5>Frete e Entrega</h5>
+                <h5>Trocas e Devoluções</h5>
+                <h5>Formas de Pagamento</h5>
+                <h5>FAQ</h5>
+            </div>
+            <div class="important-links-container">
+                <h4>Atendimento</h4>
+                <h5><strong>Telefone:</strong> (00) 1234-5678</h5>
+                <h5><strong>E-mail:</strong> exemplo@exemplo.com</h5>
+                <h5><strong>Horário de atendimento:</strong>
+                    <br>Segunda a Sábado: 07h00 às 23h00
+                    <br>Domingos e Feriados: 07h00 às 21h00
+                </h5>
+            </div>
+        </section>
+
+        <!-- Importado do Bootstrap: https://getbootstrap.com/docs/5.0/components/accordion/ -->
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <h5>Institucional</h5>
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <a href="#">Sobre Nós</a>
+                        <a href="#">Nossas Lojas</a>
+                        <a href="#">Privacidade e Segurança</a>
+                        <a href="#">Termos e Condições</a>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <h5>Central de Ajuda</h5>
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <a href="#">Fale conosco</a>
+                        <a href="#">Frete e Entrega</a>
+                        <a href="#">Trocas e Devoluções</a>
+                        <a href="#">Formas de Pagamento</a>
+                        <a href="#">FAQ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <h5>Atendimento</h5>
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <span><strong>Telefone:</strong> (00) 1234-5678</span>
+                        <span><strong>E-mail:</strong> exemplo@exemplo.com.br</span>
+                        <span>
+                            <strong>Horário de Atentimento:</strong> 
+                            <br>
+                            Segunda a Sábado: 07h00 às 23h00 
+                            <br>
+                            Domingos e Feriados: 07h00 às 21h00
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <section class="payment-section">
+            <div>
+                <img src="assets/icons/amex-icon.svg" alt="Aceitamos cartão American Express">
+                <img src="assets/icons/mastercard-icon.svg" alt="Aceitamos cartão Mastercard">
+                <img src="assets/icons/visa-icon.svg" alt="Aceitamos cartão Visa">
+                <img src="assets/icons/hipercard-icon.svg" alt="Aceitamos cartão Hipercard">
+                <img src="assets/icons/elo-icon.svg" alt="Aceitamos cartão Elo">
+            </div>
+            <div>
+                <img src="assets/icons/diners-icon.svg" alt="Aceitamos cartão Diners Club">
+                <img src="assets/icons/paypal-icon.svg" alt="Aceitamos PayPal">
+                <img src="assets/icons/pix-icon.svg" alt="Aceitamos Pix">
+                <img src="assets/icons/boleto-icon.svg" alt="Aceitamos Boleto">
+            </div>
+        </section>
+
+        <section class="certification-section">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.</p>
+            <div class="certifications-imgs-container">
+                <div>
+                    <img src="assets/imgs/lets-encrypt.png">
+                    <img src="assets/imgs/vtex-pci.png">
+                </div>
+                <div>
+                    <img src="assets/icons/avanti-logo.svg" style="width: 57px;">
+                    <img src="assets/imgs/VTEX-Logo.png">
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!-- Importação Bootstrap via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+    <!-- Importação Swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Javascript -->
+    <script type="module" src="js/addProducts.js"></script>
+    <script type="module" src="js/changeImgs.js"></script>
+    <script type="module" src="js/addDepartments.js"></script>
+    <script type="module" src="js/addCategories.js"></script>
+    <script type="module" src="js/searchInput.js"></script>
+    <script type="module" src="js/hoverSubmenu.js"></script>
+    <script type="module" src="js/hoverCategorie.js"></script>
+    <script type="module" src="js/hoverDeparment.js"></script>
+</body>
+</html>

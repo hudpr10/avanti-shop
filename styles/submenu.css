@@ -1,0 +1,194 @@
+/* Submenu */
+.submenu-container {
+    position: absolute;
+    top: calc(22px + 16px);
+
+    background-color: var(--white);
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    transition: 100ms;
+
+    box-shadow: 0 4px 8px -1px #0000001A;
+    height: 329px;
+    width: 100%;
+
+    display: flex;
+}
+
+/* Menu com todos departamentos */
+.submenu-orientation {
+    display: flex;
+    gap: 34px;
+
+    width: 100%;
+}
+
+/* Departamentos Container */
+.submenu-department-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    
+    background-color: var(--light-gray);
+    padding: 20px 15px 20px 16px;
+
+    width: 225px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* Cada Departamento */
+.department {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    transition: 100ms;
+    cursor: pointer;
+}
+
+.department:hover,
+.department:hover svg path {
+    color: var(--primary-blue);
+    fill: var(--primary-blue);
+
+    font-weight: 700;
+}
+
+/* ScrollBar personalizada */
+.submenu-department-container::-webkit-scrollbar {
+    width: 4px;
+}
+
+.submenu-department-container::-webkit-scrollbar-thumb {
+    background-color: #cecece;
+    border-radius: 16px;
+}
+
+.submenu-department-container::-webkit-scrollbar-track {
+    border-radius: 16px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.05);
+    margin: 20px 0;
+}
+
+/* Categorias Container */
+.submenu-categories-container {
+    padding-top: 18px;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    opacity: 0;
+    pointer-events: none;
+
+    height: min-content;
+    row-gap: 12px;
+    column-gap: 16px;
+}
+
+.submenu-categories-container li {
+    width: 200px;
+}
+
+.submenu-categories-container li a {
+    width: 100%;
+
+    color: var(--dark-gray);
+    font-size: 0.875rem;
+    transition: 100ms;
+}
+
+.submenu-categories-container li a:hover {
+    font-weight: 700;
+    color: var(--primary-blue);
+}
+
+/* Menu gerado pelos departamentos */
+#eachDepartment .submenu-orientation {
+    flex-direction: column;
+    gap: 17px;
+
+    margin-left: 16px;
+    margin-bottom: 19px;
+}
+
+#eachDepartment .submenu-categories-container {
+    padding: 0;
+    margin-right: 200px;
+}
+
+#eachDepartment li {
+    height: 19px;
+}
+
+.submenu-title {
+    margin-top: 19px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* Imagem */
+.submenu-img-container {
+    position: relative;
+
+    width: 236px;
+    height: 298px;
+    margin: 20px 24px 0 0;
+
+    border-radius: 10px;
+}
+
+/* Blur na imagem */
+.img-blur {
+    z-index: 1;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    background-color: black;
+    opacity: 0.4;
+    
+    border-radius: 10px;
+}
+
+.img-content {
+    z-index: 2;
+
+    position: absolute;
+    left: 27px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: flex;
+    flex-direction: column;
+    width: 126px;
+    gap: 24px;
+
+    color: var(--white);
+}
+
+.img-content p {
+    font-size: 1.5rem;
+    line-height: 27px;
+}
+
+.img-content p strong {
+    font-weight: 700;
+}   
+
+.img-content button {
+    background-color: transparent;
+    border: 1px solid var(--white);
+}
+
+/* Centralizando conteúdo em telas muito grandes */
+@media screen and (min-width: 1320px) {
+    .submenu-container {
+        width: 1320px;
+    }
+}

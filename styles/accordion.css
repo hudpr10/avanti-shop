@@ -1,0 +1,46 @@
+/* Accordion do Bootstrap */ 
+.accordion-button {
+    background-color: var(--light-gray);
+}
+
+.accordion-button::after {
+    background-image: url('/assets/icons/down-icon.svg');
+    background-size: 12px;
+    width: 12px;
+    height: 12px;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url('/assets/icons/down-icon.svg');
+}
+
+.accordion-button h5 {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--black);
+}
+
+.accordion-body {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.accordion-body a, 
+.accordion-body span {
+    font-size: 0.875rem;
+    text-decoration: none;
+    color: var(--intense-gray);
+    font-weight: 400;
+}
+
+.accordion-body strong {
+    font-weight: 700;
+}
+
+@media screen and (min-width: 1200px) {
+    .accordion {
+        display: none;
+    }
+}

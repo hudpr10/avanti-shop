@@ -1,0 +1,75 @@
+/* Menu Hamburguer, Logo Avanti e Carrinho */
+.header-icons-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 24px 16px;
+}
+
+.logo-and-input-container {
+    display: flex;
+    gap: 65px;
+}
+
+.acount-container {
+    display: flex;
+    gap: 24px;
+}
+
+/* Ícone do Cliente */
+.client-icon {
+    display: none;
+    gap: 8px;
+
+    cursor: pointer;
+}
+
+.client-icon span {
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 14px;
+}
+
+/* Ícone do carrinho */
+.cart-icon {
+    position: relative;
+    width: 36px;
+
+    cursor: pointer;
+}
+
+.cart-icon span {
+    position: absolute;
+    top: -8px;
+    right: 0;
+    
+    width: 21px;
+    height: 21px;
+    text-align: center;
+    line-height: 21px;
+    font-size: 0.75rem;
+
+    background-color: var(--primary-blue);
+    color: var(--white);
+    border-radius: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+    .client-icon {
+        display: flex;
+    }
+
+    .header-menu {
+        display: none;
+    }
+}
+
+/* Centralizando conteúdo em telas muito grandes */
+@media screen and (min-width: 1320px) {
+    .header-icons-container {
+        min-width: 1320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
